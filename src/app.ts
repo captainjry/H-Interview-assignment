@@ -19,7 +19,6 @@ app.get("/vaccine", async (req: Request, res: Response) => {
 
     return mappedQuery;
   }, {});
-
   const result = Database.find(query); // Database Example
   if (Array.isArray(result) && result.length) {
     res.status(200).send(result);
@@ -27,14 +26,3 @@ app.get("/vaccine", async (req: Request, res: Response) => {
     res.status(404).send("Not found");
   }
 });
-
-//   let query: any = {};
-//   if (doctor) {
-//     query.assignedDoctor = doctor;
-//   }
-//   if (vaccineStatus) {
-//     query.vaccineStatus = vaccineStatus;
-//   }
-//   if (vaccineTransactionStatus) {
-//     query.vaccineTransactionStatus = vaccineTransactionStatus;
-// }
