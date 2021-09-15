@@ -20,6 +20,6 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/tsc && node ./dist/index.js",
-    "test": "./node_modules/jest/bin/jest.js --config ./test/jest.config.js"
+    "test": "./node_modules/.bin/jest --config ./test/jest.config.js"
   }
 }
