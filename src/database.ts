@@ -70,7 +70,6 @@ export class Database {
       }
     }
 
-    console.log("res", result);
     return result;
   }
 }
